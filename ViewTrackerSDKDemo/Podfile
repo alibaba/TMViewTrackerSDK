@@ -1,0 +1,11 @@
+
+platform :ios
+
+target 'ViewTrackerSDKDemo' do
+	platform:ios, '7.0'
+
+#pod 'TBJSONModel', '0.1.15'
+pod 'TBJSONModel',      :path=>'/Users/philip/workspace/gitlab/TBJSONModel'
+pod 'TMViewTrackerSDK', :path=>'/Users/philip/workspace/tmall_ios/TMViewTrackerSDK'
+end
+
