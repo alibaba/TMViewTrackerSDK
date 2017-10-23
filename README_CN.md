@@ -25,7 +25,7 @@
 
 使用 Cocoapods 来获取最新的 ViewTracker 版本
 
-```
+```ruby
 pod 'ViewTracker'
 ```
 
@@ -33,9 +33,8 @@ pod 'ViewTracker'
 ## 接入
 
 ##### 设置代理，初始化开关和配置
- 
-    
-```
+
+```objc
 #import "ViewTrackerProxy.h"
 #import <TMViewTrackerSDK/TMViewTrackerSDK.h>
 
@@ -46,7 +45,7 @@ pod 'ViewTracker'
 
 ViewTrackerProxy.h
 
-```
+```objc
 #import <TMViewTrackerSDK/TMViewTrackerSDK.h>
 @interface ViewTrackerProxy : NSObject <TMViewTrackerCommitProtocol>
 @end
@@ -54,7 +53,7 @@ ViewTrackerProxy.h
 
 ViewTrackerProxy.m
 
-```
+```objc
 #import "ViewTrackerProxy.h"
 
 @implementation ViewTrackerProxy
@@ -89,9 +88,9 @@ ViewTrackerProxy.m
 @end
 ```
 
-##### 给View 打tag 'controlName' 
+##### 给View 打tag 'controlName'
 
-```
+```objc
 #import <TMViewTrackerSDK/TMViewTrackerSDK.h>
 
 ...
@@ -102,7 +101,7 @@ ViewTrackerProxy.m
 
 ##### 在 viewDidAppear 设置 pageName，建议在UIViewController的基类里设置。
 
-```
+```objc
 #import <TMViewTrackerSDK/TMViewTrackerSDK.h>
 
 ...
@@ -115,14 +114,14 @@ ViewTrackerProxy.m
 ```
 
 ## 原理
+
 - 详见 [ViewTracker原理](Docs/viewtrack_principle_CN.md)
 
 ## 作者
-@圆寸
 
-@子央
+- @圆寸
+- @子央
 
-
-## License 
+## License
 
 ViewTracker 采用 Apache2.0 协议。 详情请见 LICENSE 文件。

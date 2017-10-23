@@ -1,7 +1,7 @@
 # ViewTracker - iOS
 
-ViewTracker is a tool to automatically collect exposure and click event data. 
- 
+ViewTracker is a tool to automatically collect exposure and click event data.
+
 Now just support Objective-C, not swift support.
 
 The system requirement for ViewTracker is iOS 7.0+
@@ -16,7 +16,6 @@ The system requirement for ViewTracker is iOS 7.0+
 - A good performance on Page FPS.
 - Compact API.
 
-
 ## Performance
 
 - Move to [Performance Test](Docs/viewtrack_performance.md)
@@ -25,18 +24,17 @@ The system requirement for ViewTracker is iOS 7.0+
 
 Use Cocoapods to Get latest version of ViewTracker
 
-```
+```ruby
 pod 'ViewTracker'
 ```
-
 
 ## Getting Started
 
 ##### Set a Delegate to respond to processing exposure and click events.
- 
->>>>>>> feature/viewtrack-opensource
-    
-```
+
+> feature/viewtrack-opensource
+
+```objc
 #import "ViewTrackerProxy.h"
 #import <TMViewTrackerSDK/TMViewTrackerSDK.h>
 
@@ -47,7 +45,7 @@ pod 'ViewTracker'
 
 ViewTrackerProxy.h
 
-```
+```objc
 #import <TMViewTrackerSDK/TMViewTrackerSDK.h>
 @interface ViewTrackerProxy : NSObject <TMViewTrackerCommitProtocol>
 @end
@@ -55,7 +53,7 @@ ViewTrackerProxy.h
 
 ViewTrackerProxy.m
 
-```
+```objc
 #import "ViewTrackerProxy.h"
 
 @implementation ViewTrackerProxy
@@ -92,7 +90,7 @@ ViewTrackerProxy.m
 
 ##### Add the tag 'controlName' to the view
 
-```
+```objc
 #import <TMViewTrackerSDK/TMViewTrackerSDK.h>
 
 ...
@@ -103,7 +101,7 @@ ViewTrackerProxy.m
 
 ##### Set pageName in viewDidAppear.It is recommended to set it in the base class。
 
-```
+```objc
 #import <TMViewTrackerSDK/TMViewTrackerSDK.h>
 
 ...
@@ -116,11 +114,10 @@ ViewTrackerProxy.m
 ```
 
 ## Author
-@圆寸
 
-@子央
+- @圆寸
+- @子央
 
-
-## LICENSE 
+## LICENSE
 
 ViewTracker is available under the Apache2.0 license. See the LICENSE file for more info.
